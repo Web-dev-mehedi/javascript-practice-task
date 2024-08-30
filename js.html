@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even odd number check</title>
+</head>
+<body>
+    <script>
+    //      let isnumber = prompt("enter your number :");
+    //    if(isnumber % 2 === 0 ){
+    //       document.write("জোড়");
+    //         }
+    //    else {
+    //      document.write(" বেজোড় ")
+    //    }
+
+       let weight = prompt(" Weight : ");
+      let height = prompt ("height : ") ;
+      let inchesHeight = 12 * height ;
+          meterHeight = inchesHeight / 39.37 ;
+         bmi = weight / meterHeight ** 2 ;
+    
+          
+
+if (bmi < 18.5) {
+    document.write("you are underweight = " + parseFloat(bmi.toFixed(2)))}
+    else if (bmi >= 18.5 && bmi <= 24.5){document.write("you are normal =" + parseFloat(bmi.toFixed(2)) )} 
+    else if (bmi >= 25 && bmi <= 29.9){
+        document.write(" you are overweight =" + parseFloat(bmi.toFixed(2)))
+    }
+else{
+    document.write("you are obese =" + parseFloat(bmi.toFixed(2)))
+};
+
+    </script>
+</body>
+</html>
