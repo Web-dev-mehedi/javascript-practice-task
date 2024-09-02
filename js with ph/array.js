@@ -4,12 +4,12 @@
 num[1] = 100 ;// array-add or  replace by using array-index
 
 // others system for adding array-index
-//  num.push (200 , 300, 400 ); // its adding in arraay at last positio
-//  num.pop(); //remove the last value from array by using this
-//  num.shift(); //remove the fast value from array
-//  num.unshift("hi");// adding value at first position by using unshift
-// console.log( num.includes("ami"));//this for checking if a item avaiable or not in array
-// console.log( num.includes(100));//this for checking if a item avaiable or not in array
+ num.push (200 , 300, 400 ); // its adding in arraay at last positio
+ num.pop(); //remove the last value from array by using this
+ num.shift(); //remove the fast value from array
+ num.unshift("hi");// adding value at first position by using unshift
+console.log( num.includes("ami"));//this for checking if a item avaiable or not in array
+console.log( num.includes(100));//this for checking if a item avaiable or not in array
 
 
 // console.log(num);
