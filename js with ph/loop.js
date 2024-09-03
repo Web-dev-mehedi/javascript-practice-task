@@ -100,3 +100,69 @@
 // for (let i = 0; i < array.length; i++) {
 //     console.log(array[i]); // This will log the values 10, 20, 30, 40
 // }
+
+
+
+// conseptual -class
+
+// const flowers = ['golap', 'sapla' ,'joba','beli','gali']; //for loop diye array value printting
+// for (i = 0 ; i < flowers.length; i++){   //condition
+//   console.log(flowers[i]); //individual value er jonno amader [] nite hoi
+// }
+
+// const flowers = ['golap', 'sapla' ,'joba','beli','gali'];  //for loop diye array value printting in reversly
+// for (let i = flowers.length -1; i>=0; i-- ){
+//   console.log(flowers[i]); [] nite hoi
+// }
+
+// for Of  loop diye array value printting
+const flowers = ['golap', 'sapla' ,'joba','beli','gali'];
+for (let item of flowers){
+    console.log(item);
+}
+
+//for of loop diye array value printting in reversly
+for (let item of flowers.reverse()){
+    console.log(item);}
+
+  //  nasted loop
+  for (let i= 1; i <= 5 ; i++){
+    console.log("hello ami I " , i);
+    for(let j= 1; j <= 5 ; j++){
+     console.log("hello form J = " , j)
+    }
+  }
+
+
+  // even num by for of loop
+// let numbers = [1,2,3,4,5,6,7,8,9]
+//   let evens = []
+//   for(let item of numbers){
+//       if(item % 2===0){
+//         console.log(item);
+//       }
+//   }
+//  // odd num by for of loop
+//   for(let item of numbers){
+//     if(item % 2 !== 0){
+//       console.log(item);
+//     }
+// }
+
+
+//loop break : its means when we use Break it will stop the loop from this value
+const x= [1,2,3,4,5,6,7,8];
+for (let i = 0; i < x.length; i++){
+    if (x[i] == 5){
+        break;
+    }
+    console.log(x[i])
+}
+// loop continue means we skip any value by using CONTINUE methoods
+const y= [1,2,3,4,5,6,7,8];
+for (let i = 0; i < y.length; i++){
+    if (y[i] == 5){
+        continue;
+    }
+    console.log(y[i])
+}

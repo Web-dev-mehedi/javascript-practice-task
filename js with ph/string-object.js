@@ -35,28 +35,74 @@
 // console.log(part);
 
 //string  .split()
-const sentence = " i love my country bangladesh"
-console.log(sentence.split(""));  // split mane aladha kora amra sentence er jekono ord ke 
-console.log(sentence.split("a"));/// ekhane a ke split korle a er ekhne aladha hobe
-const friendsStr = "rohim , korim, selim, balim, jalim, alim"
-console.log(friendsStr.split("a"));
+// const sentence = " i love my country bangladesh"
+// console.log(sentence.split(""));  // split mane aladha kora amra sentence er jekono ord ke 
+// console.log(sentence.split("a"));/// ekhane a ke split korle a er ekhne aladha hobe
+// const friendsStr = "rohim , korim, selim, balim, jalim, alim"
+// console.log(friendsStr.split("a"));
 
 
 //string  .join()
 
-const realFriends = [ "rohim " , "korim", "selim", "alim", "jalim", "balim" ]// alada alada string ke join korar jonno(JODI ARRAY ER MAJE THAKE) .join() use kora hoi 
-console.log(realFriends.join());// kono commad na dile apna apni coma use kore join hoye jabe
-console.log(realFriends.join("|"));//any sign use korle oita dia join hoye akta sentace hoye jabe
-console.log(realFriends.join("-"));
+// const realFriends = [ "rohim " , "korim", "selim", "alim", "jalim", "balim" ]// alada alada string ke join korar jonno(JODI ARRAY ER MAJE THAKE) .join() use kora hoi 
+// console.log(realFriends.join());// kono commad na dile apna apni coma use kore join hoye jabe
+// console.log(realFriends.join("|"));//any sign use korle oita dia join hoye akta sentace hoye jabe
+// console.log(realFriends.join("-"));
 
 // .concat
-const first = "avid"
-const last = "navid"
+// const first = "avid"
+// const last = "navid"
 
-const fullName1 = first +" "+ last //genarally amra multiply string er maje concatination kore thaki in this way te...and word glar maje space dite amra white space use koRi    WHITE-SPACE== " "
-console.log(fullName1); 
-const fullName2 = first.concat(" ") .concat(last);// same concatination er working formola amra concat diye korte pari and white space diye word er gap barate pari
-console.log(fullName2);
+// const fullName1 = first +" "+ last //genarally amra multiply string er maje concatination kore thaki in this way te...and word glar maje space dite amra white space use koRi    WHITE-SPACE== " "
+// console.log(fullName1); 
+// const fullName2 = first.concat(" ") .concat(last);// same concatination er working formola amra concat diye korte pari and white space diye word er gap barate pari
+// console.log(fullName2);
+// // .includes
+// console.log(last.includes("x"));
 
+// let str = "Mississippi";
+// console.log(str.indexOf("i", 3));
+
+//---------module 20_4 Reverse a String in Three different ways--------------
+
+//letter and reverse in striing //letter দিয়ে কোনো sentence কে একটা  একটা অক্ষররে লিখা যাই ex..
+// const sentence = " i am a learning web dev"
+// for (const letter of sentence){
+//     console.log(letter);
+// }
+
+// reverse in string...// রিভার্স দিয়ে sentense  এর প্রতিটি লেটারস কে উল্টো এলাইন বা reverse করে লেখা যাই ex--dev:ved
+// const sentences ="i am  learning web dev";
+// let reverse ="";
+// for (const letter of sentences){ // এভাবে for of দিয়েও আমরা সেন্টেন্স রিভার্স করতে পারি 
+//     reverse = letter + reverse;
+// }
+// console.log(reverse);
+
+//2nd meythods of reverseing sentence
+
+// let rev = ""
+// for (let i = 0 ; i <sentence.length; i++){
+//     // console.log(i);
+//     const letter = sentence[i];
+//     rev = letter + rev
+
+// }
+// console.log(rev);
+
+// 3rd and shortcut for string reverse
+
+// const reversed = sentences.split("").reverse().join(""); //এভাবে। .split (' ') .reverse () .join (' ') দিয়েও আমরা সেন্টেন্স রিভার্স করতে পারি 
+// console.log(reversed);
+
+
+//object
+
+const person = {
+    name : "mehedi hasan",
+    address: "sherpur"
+}
+person.name("khan");
+console.log(person);
 
 
