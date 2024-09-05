@@ -1,5 +1,5 @@
 //   const num = [10, 20,30,40,50,60,70];
-// //array-index - 0   1  2  3  4  5  6
+// //array-index - 0   1  2  3  4  5  6 //
 
 // num[1] = 100 ;// array-add or  replace by using array-index
 
@@ -37,7 +37,7 @@ console.log(Array.isArray(convert));
 const a = [2,3,4,5];
 console.log(a.join('100'));//its adding this value to individual array value except last value
 
-//.slice methood 
+// .slice methood 
 const flowers = ['golap', 'sapla' ,'joba','beli','gali'];//in slice array index type not working
 console.log(flowers.slice(2,4));//joto gola amra rakhte chai sei onujayi index number dibo , ekhane (2,4) means 2 er por theke until 5 .
 

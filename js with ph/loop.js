@@ -150,19 +150,19 @@ for (let item of flowers.reverse()){
 // }
 
 
-//loop break : its means when we use Break it will stop the loop from this value
-const x= [1,2,3,4,5,6,7,8];
-for (let i = 0; i < x.length; i++){
-    if (x[i] == 5){
-        break;
-    }
-    console.log(x[i])
-}
-// loop continue means we skip any value by using CONTINUE methoods
-const y= [1,2,3,4,5,6,7,8];
-for (let i = 0; i < y.length; i++){
-    if (y[i] == 5){
-        continue;
-    }
-    console.log(y[i])
-}
+// //loop break : its means when we use Break it will stop the loop from this value
+// const x= [1,2,3,4,5,6,7,8];
+// for (let i = 0; i < x.length; i++){
+//     if (x[i] == 5){
+//         break;
+//     }
+//     console.log(x[i])
+// }
+// // loop continue means we skip any value by using CONTINUE methoods
+// const y= [1,2,3,4,5,6,7,8];
+// for (let i = 0; i < y.length; i++){
+//     if (y[i] == 5){
+//         continue;
+//     }
+//     console.log(y[i])
+// }
