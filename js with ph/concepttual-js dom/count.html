@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count app</title>
+
+    <style>
+        h1{
+            background-color: azure;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+       span{
+        background-color: rgb(195, 195, 101);
+       width:40px;
+       height: 35px;
+       margin:0 auto;
+        border: 1px solid rgba(43, 26, 26, 0.37);
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        display: inline-block;
+        padding-top: 5px;
+        font-size: 25px;
+        color: rgba(228, 112, 62, 0.893);
+       }
+       .block{background-color: bisque;
+        margin: auto;
+        text-align: center;
+        width: 400px;
+        height: 400px;
+        padding-top: 200px;
+
+   
+    }
+    </style>
+</head>
+<body>
+       
+      
+    <div class="block">
+        <h2>Count app</h2>
+        <h1 id="output">click to count</h1>
+        <span id="plus">+</span>
+        <span id="minus">-</span>
+    </div>
+
+
+    <script>
+        let sum = 1;
+        const btn= document.getElementById('plus').addEventListener('click',function(){
+            const output = document.getElementById('output');
+            output.innerText = sum;
+            sum += 1
+        })
+        const btn1 = document.getElementById('minus').addEventListener('click',function(){
+            const output = document.getElementById('output');
+            output.innerText =
+            sum -= 1
+        })
+    </script>
+</body>
+</html>

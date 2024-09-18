@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment-box</title>
+</head>
+<body>
+     <div id="output-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit voluptas eaque omnis incidunt mollitia, amet itaque? Mollitia, laboriosam ullam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit voluptas eaque omnis incidunt mollitia, amet itaque? Mollitia, laboriosam ullam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit voluptas eaque omnis incidunt mollitia, amet itaque? Mollitia, laboriosam      ullam?
+        </p>
+   </div>
+   <div>
+       <textarea id = "input-events" placeholder="write your comment here"cols="30" rows="20">
+             
+       </textarea>><br>
+       <button id="click-handelar">sumbit</button>
+   </div>
+   <script src="events.js"> </script>
+   <script>
+
+                //step-1 add button by id
+  document.getElementById('click-handelar').addEventListener('click', function(){
+    //step-2 add input by id
+  const input = document.getElementById('input-events');
+  const inputText = input.value;// add .value for collect input value
+  //step-3 
+      const output = document.getElementById('output-container');
+      const p = document.createElement('p')
+        p.innerText = inputText;
+        output.appendChild(p);
+
+        input.value ='';
+
+
+})
+
+   </script>
+</body>
+</html>

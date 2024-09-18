@@ -1,0 +1,19 @@
+h1{color: green};
+main {background-color: rgb(93, 93, 93);}
+#jalali{
+    color:red;
+    background: #000;
+}
+
+.amiTomer{
+    color: burlywood;
+    background-color: blueviolet;
+}
+
+.friut{
+    color:hotpink;
+}
+
+.text-center{
+    text-align : center;
+}

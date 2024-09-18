@@ -230,59 +230,64 @@ getAge(40)
 // const sum = sumOfEvenNumbers(numbs);
 // console.log('even number of sum', sum)
 
-console.log("-----------return even number from array and sum of all----------")
-function evenNumbersOnly(numbers){
-            let sum = 0;
-            even=[];
-            for(const number of numbers){
-                 if(number % 2 === 0){
-                    //   console.log(number);
-                      even.push(number)
-                      sum += number;
-                 }
-            }
-            console.log(even)
-         return sum  
+// console.log("-----------return even number from array and sum of all----------")
+// function evenNumbersOnly(numbers){
+//             let sum = 0;
+//             even=[];
+//             for(const number of numbers){
+//                  if(number % 2 === 0){
+//                     //   console.log(number);
+//                       even.push(number)
+//                       sum += number;
+//                  }
+//             }
+//             console.log(even)
+//          return sum  
      
-}
-const numbs = [2,4,5,9,8,1,3,6]
-const allEvens= evenNumbersOnly(numbs)
-console.log(allEvens);
+// }
+// const numbs = [2,4,5,9,8,1,3,6]
+// const allEvens= evenNumbersOnly(numbs)
+// console.log(allEvens);
 
-//
-console.log("---------------return and sum of all odd number from array----------------")
+// //
+// console.log("---------------return and sum of all odd number from array----------------")
 
-function oddNumbersOnly(numbers){
-    let sumOfOdds = 0
-     oddNum = []
-      for(const number of numbers){
-          if(number % 2 !== 0){
-            //    console.log(number);
-                oddNum.push(number);
-               sumOfOdds += number; 
-          }
-      }
-      console.log(oddNum)
-      return sumOfOdds
+// function oddNumbersOnly(numbers){
+//     let sumOfOdds = 0
+//      oddNum = []
+//       for(const number of numbers){
+//           if(number % 2 !== 0){
+//             //    console.log(number);
+//                 oddNum.push(number);
+//                sumOfOdds += number; 
+//           }
+//       }
+//       console.log(oddNum)
+//       return sumOfOdds
       
-}
+// }
 
-let nums =[11,9,4,8,12,25,7,6];
+// let nums =[11,9,4,8,12,25,7,6];
 
-const allodds=oddNumbersOnly(nums);
-console.log(allodds);
-
-
-
-// 
-for (var i = 0; i < 5; i++) {
-    setTimeout(function () {
-    console.log(i);
- }, 100);
-}
+// const allodds=oddNumbersOnly(nums);
+// console.log(allodds);
 
 
 
+// // 
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function () {
+//     console.log(i);
+//  }, 100);
+// }
 
+
+// arrow function
+
+const arrowFunction = (x, y) => /*arrow function */ {
+    return x * y
+};
+let inarrow = arrowFunction(3 , 5)
+console.log(inarrow)
    
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my secret info</title>
+</head>
+<body>
+<!-- how we can delete an information -->
+
+    <h1 id="secret-code">my secret info</h1>
+    <input id="delete-confirm" type="text" placeholder="Please type 'delete' ">
+    <button id="btn-delete" disabled>delete</button>
+
+    <script>
+        // document.getElementById('btn-delete').addEventListener('click', function(){
+        //     const secret = document.getElementById('secret-code');
+        //     secret.style.display = "none"
+        // })
+
+
+          document.getElementById('delete-confirm').addEventListener('keyup', function(event){ // keyup diye text collect kora hoise
+            const text = event.target.value  // indivitual key ke add kora hoise
+            const deleteButton = document.getElementById('btn-delete'); // if else  use kore condition dewa hoise
+         if(text === 'delete'){
+                deleteButton.removeAttribute('disabled'); // .removeAttribute() diye attribute remove kora hoise
+         }
+         else{
+            deleteButton.setAttribute('disabled', true)//.setAttribute diye attribute set kora hoise
+         }
+
+        })
+       // simple click function
+        document.getElementById('btn-delete').addEventListener('click',function(){
+            const remove = document.getElementById('secret-code');
+             remove.style.display ='none'// display theke kisu remove korar jonno use kora hoise
+             text.value = '';
+        })
+
+    </script>
+</body>
+</html>

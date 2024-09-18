@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more-event</title>
+</head>
+<body>
+    <h1>
+        explore more events
+    </h1>
+
+    <button id="moseover-handle">event</button>
+    <input id= "input-handle" type="text">
+
+
+
+    <script>
+
+        // when we placed the mouse on the triggerd point its triggerd
+    //  document.getElementById('moseover-handle').addEventListener('mouseenter',function(){
+    //     console.log("event triggerted")
+    //  }
+    //  )
+    //if we move the mouse on the trigger point its triggerd
+    // document.getElementById('moseover-handle').addEventListener('mousemove',function(){
+    //     console.log("event triggerted")
+    //  }
+    //  )
+
+    // when we clicked on the input field its focus and  its triggered
+    document.getElementById('input-handle').addEventListener('focus',function(){
+        console.log("event triggerted on focus")
+     }
+     )
+// when we clicked on the input field its blur/not focused and  its triggered
+     document.getElementById('input-handle').addEventListener('blur',function(){
+        console.log("event triggerted to blur")
+     }
+     )
+
+   // keydown use korle ja input debo ta theke akta akta kom asbe
+   document.getElementById('input-handle').addEventListener('keydown',function(){
+        console.log(event.target.value)
+     }
+     )
+
+    // keypress use korle ja input debo ta theke akta akta kom asbe same as key down
+    //  document.getElementById('input-handle').addEventListener('keypress',function(){
+    //     console.log(event.target.value)
+    //  }
+    //  )
+
+      // keyup use korle ja input debo tai pabo // what we write in the input field we can know using keyup 
+   document.getElementById('input-handle').addEventListener('keyup',function(){
+        console.log(event.target.value)
+     }
+     )
+
+
+    </script>
+</body>
+</html>

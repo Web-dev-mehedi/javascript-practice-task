@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Boubble</title>
+</head>
+<body>
+    <h1>exploreing Event bubble</h1>
+    <section id="section-items">
+         <ul id="ul-items">
+            <li id="1item">Lorem ipsum dolor sit,  consequatur  </li>
+            <li id="2item">amet consectetur adipisicing elit.</li>
+            <li id="3item"> Itaque dignissimos perferendis</li>
+            <li id="4item">vitae consectetur ducimus</li>
+            <li id="5item">repellat labore, repudiandae nisi eaque.</li>
+         </ul>
+    </section>
+
+    <script>
+
+        // document.getElementById('2item').addEventListener('click', function(event){ //events bubble 
+        //     console.log('item-2 ckecked');
+        //     event.stopImmediatePropagation();//.stopPropagation() prevent events to propragate parents items
+        // })
+
+
+        // we can use multiple event propragation
+
+        // document.getElementById('2item').addEventListener('click', function(event){ //events bubble 
+        //     console.log('item-2 ckecked1');
+        //     event.stopPropagation(); // if we use .stopPropagation() in multiple events it showing siblings output and prevent events to propragate parents items 
+
+        // })
+
+        document.getElementById('2item').addEventListener('click', function(event){ //events bubble 
+            console.log('item-2 ckecked2');
+            event.stopImmediatePropagation();//if we use .stopImmediatePropagation() in multiple events it showing just this event 
+        })
+
+        document.getElementById('2item').addEventListener('click', function(event){ //events bubble 
+            console.log('item-2 ckecked3');
+        })
+
+        document.getElementById('2item').addEventListener('click', function(event){ //events bubble 
+            console.log('item-2 ckecked4');
+           
+        })
+
+        //
+        document.getElementById('ul-items').addEventListener('click', function(){
+            console.log('ul-clicked')
+        })
+
+        document.getElementById('section-items').addEventListener('click', function(){
+            console.log('section-clicked')
+        })
+    </script>
+</body>
+</html>

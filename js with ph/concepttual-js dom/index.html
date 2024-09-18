@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom in js</title>
+    <style>
+       #content{display: none;} 
+    </style>
+</head>
+
+<body>
+   <h3>Hi We Are Now Teaching Dom</h3>
+      
+  
+
+
+   <!--  -->
+   
+   <div class="container1">
+    <li id="item1">item1</li>
+    <li id="item2">item2</li>
+    <li id="item3">item3</li>
+    <li id="item4">item4</li>
+   </div>
+
+ 
+   <div class="container2">
+    <p>Hello<span>World</span></p>
+    <p id="content">this is hidden text</p>
+   </div>
+
+
+   <button id="myButton">clickMe</button>
+   <a href="" id="myLink" target="_blank" title="Go to Example"> Go Here</a>
+
+  <script src="./conspt.js"></script>
+
+    <script>
+      const myBtn= document.getElementById('myButton');
+      console.log(myBtn)
+    //   myBtn.setAttribute('id','btn')
+      myBtn.setAttribute('class','btn btn-primary')// we can add multiple attribute bye using setAttribute
+      myBtn.setAttribute('disabled',true)// we can disabled button  like this
+
+      myBtn.removeAttribute('disabled',true)// to remove attribute
+
+      const myLink =document.getElementById('myLink');
+      console.log(myLink.getAttribute('href'))// we can get attribute from this
+
+
+
+    </script>
+</body>
+</html>

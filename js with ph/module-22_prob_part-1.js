@@ -111,7 +111,7 @@ console.log(Math.round(10.5));
 console.log(Math.round(10.4));
 console.log(Math.round(10.49));
 //
-console.log(Math.floor(10.9));//dosomi badh diye int ta rakhe
+console.log(Math.floor(10.9));//dosomik badh diye int ta rakhe
 //
 console.log(Math.ceil(10.1));// dosomi badh diye int er shate +1 kore
 //

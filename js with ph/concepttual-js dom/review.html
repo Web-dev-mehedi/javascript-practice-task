@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reView app</title>
+    <style>
+        .body{
+            margin:auto;
+            width: 40%;
+            background-color: aqua;
+            text-align:center;
+            padding: 40px;
+        }
+
+    .body1{
+        text-align: left;
+        width: 70%;
+        margin: auto;
+    }
+        textarea{
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid rgb(159, 159, 159);
+        }
+        h2{
+            background-color: antiquewhite;
+            width: 30%;
+            margin:30px auto;
+            padding: 10px;
+            text-align: cent;
+            border-radius: 12px;
+        }
+        button{ background-color: antiquewhite;
+            width: 30%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 12px;
+        }
+    
+    </style>
+</head>
+<body>
+      <div id="body" class="body">
+        <div class="body1">
+            <h1>Daraz Lite </h1>
+            <textarea id="input-collect" name="" cols="30" rows="10" placeholder="Leave a review"></textarea><br>
+            <button id="btn" type="submit">SUBMIT</button>
+            <h3>User Review</h3>
+        </div>
+           
+      </div>
+     
+     
+    <script>
+        const btn =   document.getElementById('btn').addEventListener('click',function(){
+
+          const input = document.getElementById('input-collect');
+           const val = input.value
+           input.value = "";
+           if(val == ""){
+              btn.setAttribute('disabled',true)
+           }
+
+           const parent = document.getElementById('body');
+           const h2 = document.createElement('h2');
+              h2.innerText = val;
+              parent.appendChild(h2)
+           
+         })
+    </script>
+</body>
+</html>

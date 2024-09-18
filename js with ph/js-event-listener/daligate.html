@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event deligate</title>
+</head>
+<body>
+    <h1>exploreing Event daligate</h1>
+    <section id="section-items">
+         <ul id="li-conatainer">
+            <li class="item">Lorem ipsum dolor sit,  consequatur  </li>
+            <li class="item">amet consectetur adipisicing elit.</li>
+            <li class="item"> Itaque dignissimos perferendis</li>
+            <li class="item">vitae consectetur ducimus</li>
+            <li class="item">repellat labore, repudiandae nisi eaque.</li>
+         </ul>
+         <button id="add">Add item</button>
+    </section>
+
+    <script>
+         
+        //   const items = document.getElementsByClassName ('item');
+        //   for(const item of items){
+        //    item.addEventListener('click', function(event){ // use can use event or item in parameter for parameter name
+        //     //   console.log(event.target) // if we use event than we add .target to access for specified items
+        //     //   console.log(event.target.parentNode)// we can access items parent node by use .parentNode
+              
+        //        event.target.parentNode.removeChild(event.target) //we can use this methood  for remove an items from there parent 
+        
+        //    })
+        //   }
+           
+
+
+        // event deligate
+           // for remove item on click from parent
+          document.getElementById('li-conatainer').addEventListener('click', function(event){
+              event.target.parentNode.removeChild(event.target)
+          })
+          // for add an item inside to the parent on clicks
+          document.getElementById('add').addEventListener('click', function(){
+             const viewItem= document.getElementById('li-conatainer');
+            const li=  document.createElement('li');
+            li.innerText = 'Brand new items'
+            viewItem.appendChild(li)
+          })
+
+       
+    </script>
+</body>
+</html>
