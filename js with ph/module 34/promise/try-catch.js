@@ -1,4 +1,5 @@
 
+//try catch use for async 
 
 // try-catch 
 const checkAge = () =>{
